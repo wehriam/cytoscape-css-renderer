@@ -6,6 +6,7 @@ cytoscape-css-renderer
 
 Cytoscape renderer that uses CSS transforms to provide HTML labels.
 
+See the demo at: http://htmlpreview.github.io/?https://github.com/wehriam/cytoscape-css-renderer/blob/master/demo.html
 
 ## Dependencies
 
@@ -41,7 +42,7 @@ Plain HTML/JS has the extension registered for you automatically, because no `re
 
 ## API
 
-Require the library and specify 'css' as renderer.name.
+Register the extension and specify 'css' as renderer.name.
 
 ```js
   $(function(){
