@@ -1,0 +1,22 @@
+{
+  "name": "cytoscape-css-renderer",
+  "version": "0.0.1",
+  "description": "Cytoscape renderer that uses CSS transforms to provide label formatting.",
+  "main": "cytoscape-css-renderer.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wehriam/cy-expiriment.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "cytoscape",
+    "cyext"
+  ],
+  "license": "LGPL3+"
+}
