@@ -43,7 +43,7 @@ Plain HTML/JS has the extension registered for you automatically, because no `re
 
 Require the library and specify 'css' as renderer.name.
 
-```
+```js
   $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
