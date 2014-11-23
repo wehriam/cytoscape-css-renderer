@@ -4,7 +4,7 @@ cytoscape-css-renderer
 
 ## Description
 
-A dom expiriment.
+Cytoscape renderer that uses CSS transforms to provide label formatting.
 
 
 ## Dependencies
@@ -41,31 +41,52 @@ Plain HTML/JS has the extension registered for you automatically, because no `re
 
 ## API
 
-Please briefly describe your API here:
+Require the library and specify 'css' as renderer.name.
 
-```js
-cy.dom-node({
-  foo: 'bar', // some option that does this
-  baz: 'bat' // some options that does that
-  // ... and so on
-});
 ```
+  $(function(){
+    var cy = window.cy = cytoscape({
+      container: document.getElementById('cy'),
+      renderer: {
+        name: "css"
+      },
+      ready: function(){
+      },
+      style: [
+        {
+          selector: 'node',
+          css: {
+            'content': 'data(name)',
+            "font-size":"10px",
+          }
+        },
+        {
+          selector: 'edge',
+          css: {
+            'target-arrow-shape': 'triangle'
+          }
+        }
+      ],
+      elements: {
+        nodes: [
+          { data: { id: 'j', name: '<b>Jerry</b><br />Seinfeld' } },
+          { data: { id: 'e', name: 'Elaine' } },
+          { data: { id: 'k', name: 'Kramer' } },
+          { data: { id: 'g', name: 'George' } }
+        ],
+        edges: [
+          { data: { source: 'j', target: 'e' } },
+          { data: { source: 'j', target: 'k' } },
+          { data: { source: 'j', target: 'g' } },
+          { data: { source: 'e', target: 'j' } },
+          { data: { source: 'e', target: 'k' } },
+          { data: { source: 'k', target: 'j' } },
+          { data: { source: 'k', target: 'e' } },
+          { data: { source: 'k', target: 'g' } },
+          { data: { source: 'g', target: 'j' } }
+        ]
+      }
+    });
+  });
 
-Or maybe if you have a collection extension:
-
-```js
-cy.elements().test({
-  foo: 'bar', // some option that does this
-  baz: 'bat' // some options that does that
-  // ... and so on
-});
 ```
-
-
-## Publishing instructions
-
-This project is set up to automatically be published to npm and bower.  To publish:
-
-1. Set the version number environment variable: `export VERSION=1.2.3`
-1. Publish: `gulp publish`
-1. If publishing to bower for the first time, you'll need to run `bower register cytoscape-dom-node https://github.com/wehriam/cy-expiriment.git`

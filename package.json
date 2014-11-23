@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wehriam/cy-expiriment.git"
+    "url": "https://github.com/wehriam/cytoscape-css-renderer.git"
   },
   "keywords": [
     "cytoscape",
@@ -16,9 +16,9 @@
   ],
   "license": "LGPL3+",
   "bugs": {
-    "url": "https://github.com/wehriam/cy-expiriment/issues"
+    "url": "https://github.com/wehriam/cytoscape-css-renderer/issues"
   },
-  "homepage": "https://github.com/wehriam/cy-expiriment",
+  "homepage": "https://github.com/wehriam/cytoscape-css-renderer",
   "devDependencies": {
     "gulp": "^3.8.8",
     "gulp-jshint": "^1.8.5",

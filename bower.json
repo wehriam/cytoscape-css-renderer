@@ -5,7 +5,7 @@
   "main": "cytoscape-css-renderer.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wehriam/cy-expiriment.git"
+    "url": "https://github.com/wehriam/cytoscape-css-renderer.git"
   },
   "ignore": [
     "**/.*",

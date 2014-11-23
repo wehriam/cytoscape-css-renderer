@@ -41,11 +41,10 @@
 				var cy = window.cy = cytoscape({
 					container: document.getElementById('cy'),
 					renderer: {
-						name:"css"
+						name: "css"
 					},
 					ready: function(){
 					},
-
 					style: [
 						{
 							selector: 'node',
@@ -61,7 +60,6 @@
 							}
 						}
 					],
-
 					elements: {
 						nodes: [
 							{ data: { id: 'j', name: '<b>Jerry</b><br />Seinfeld' } },
@@ -88,7 +86,7 @@
 	</head>
 
 	<body>
-		<h1>cytoscape-dom-node demo</h1>
+		<h1>cytoscape-css-renderer demo</h1>
 
 		<div id="cy"></div>
 
