@@ -4,7 +4,7 @@ cytoscape-css-renderer
 
 ## Description
 
-Cytoscape renderer that uses CSS transforms to provide label formatting.
+Cytoscape renderer that uses CSS transforms to provide HTML labels.
 
 
 ## Dependencies

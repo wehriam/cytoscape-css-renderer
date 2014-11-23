@@ -1,7 +1,7 @@
 {
   "name": "cytoscape-css-renderer",
   "version": "0.0.1",
-  "description": "Cytoscape renderer that uses CSS transforms to provide label formatting.",
+  "description": "Cytoscape renderer that uses CSS transforms to provide HTML labels.",
   "main": "cytoscape-css-renderer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
